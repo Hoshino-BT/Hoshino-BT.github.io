@@ -1,6 +1,6 @@
 {
-    "name": "untitled1",
-    "short_name": "untitled1",
+    "name": "record_voice",
+    "short_name": "record_voice",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
