@@ -15336,9 +15336,7 @@ this.a=b},
 C_:function C_(a){var _=this
 _.e=_.d=!1
 _.f=0
-_.w=_.r=null
-_.x=$
-_.a=_.y=null
+_.a=_.y=_.x=_.w=_.r=null
 _.b=a
 _.c=null},
 UX:function UX(a){this.a=a},
@@ -47802,8 +47800,7 @@ n(a){var s=this,r=s.r
 if(r!=null)r.ao(0)
 r=s.w
 if(r!=null)r.ao(0)
-A.d(s.x,"_audioRecorder")
-$.i2().n(0)
+if(s.x!=null)$.i2().n(0)
 s.bf(0)},
 O(a,b){var s,r=this,q=null,p=t.E,o=A.a([A.a0J(A.a([r.JQ(),B.r6,r.JP(),B.r6,r.JS()],p),B.pw,B.cS)],p),n=r.y
 if(n!=null){s=n.a
@@ -47835,12 +47832,10 @@ if(s.d||s.e)return A.a0S(s.xx(B.i.aL(s.f,60))+" : "+s.xx(B.i.ew(s.f,60)),B.F0)
 return B.Hd},
 xx(a){var s=B.i.h(a)
 return a<10?"0"+s:s},
-hG(a){var s=0,r=A.P(t.H),q=1,p,o=[],n=this,m,l,k,j,i,h,g,f
+hG(a){var s=0,r=A.P(t.H),q=1,p,o=[],n=this,m,l,k,j,i,h,g
 var $async$hG=A.Q(function(b,c){if(b===1){p=c
-s=q}while(true)switch(s){case 0:g=new A.Q1()
-n.x=g
+s=q}while(true)switch(s){case 0:if(n.x==null)n.x=new A.Q1()
 q=3
-A.d(g,"_audioRecorder")
 s=8
 return A.V($.i2().hc(),$async$hG)
 case 8:s=c?6:7
@@ -47848,17 +47843,17 @@ break
 case 6:i=0
 case 9:if(!(i<11)){s=11
 break}m=B.xK[i]
-A.d(n.x,"_audioRecorder")
+n.x.toString
 s=12
 return A.V($.i2().lr(m),$async$hG)
 case 12:l=c
 A.a_e().$1("AudioEncoder."+m.b+" supported: "+A.e(l))
 s=l?13:14
 break
-case 13:A.d(n.x,"_audioRecorder")
+case 13:n.x.toString
 s=15
 return A.V($.i2().jX(0,128e3,m,null,44100),$async$hG)
-case 15:A.d(n.x,"_audioRecorder")
+case 15:n.x.toString
 s=16
 return A.V($.i2().i0(),$async$hG)
 case 16:k=c
@@ -47874,8 +47869,8 @@ case 11:case 7:q=1
 s=5
 break
 case 3:q=2
-f=p
-j=A.aa(f)
+g=p
+j=A.aa(g)
 s=5
 break
 case 2:s=1
@@ -47889,7 +47884,7 @@ while(true)switch(s){case 0:o=q.r
 if(o!=null)o.ao(0)
 o=q.w
 if(o!=null)o.ao(0)
-A.d(q.x,"_audioRecorder")
+q.x.toString
 s=2
 return A.V($.i2().cp(0),$async$nc)
 case 2:p=b
@@ -47906,7 +47901,7 @@ while(true)switch(s){case 0:p=q.r
 if(p!=null)p.ao(0)
 p=q.w
 if(p!=null)p.ao(0)
-A.d(q.x,"_audioRecorder")
+q.x.toString
 s=2
 return A.V($.i2().cZ(0),$async$n1)
 case 2:q.ai(new A.UY(q))
@@ -47915,7 +47910,7 @@ return A.O($async$n1,r)},
 n5(){var s=0,r=A.P(t.H),q=this
 var $async$n5=A.Q(function(a,b){if(a===1)return A.M(b,r)
 while(true)switch(s){case 0:q.z9()
-A.d(q.x,"_audioRecorder")
+q.x.toString
 s=2
 return A.V($.i2().cb(0),$async$n5)
 case 2:q.ai(new A.UZ(q))
@@ -47963,7 +47958,7 @@ $1(a){return this.D8(a)},
 D8(a){var s=0,r=A.P(t.H),q=this,p,o
 var $async$$1=A.Q(function(b,c){if(b===1)return A.M(c,r)
 while(true)switch(s){case 0:p=q.a
-A.d(p.x,"_audioRecorder")
+p.x.toString
 o=p
 s=2
 return A.V($.i2().hv(),$async$$1)
